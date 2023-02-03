@@ -1,0 +1,65 @@
+body {
+    background-color: #171717;
+    font-family: Segoe UI, SegoeUI, Segoe WP, Helvetica Neue, Helvetica, Tahoma, Arial, sans-serif;
+    font-weight: 400;
+    color: #e3e3e3;
+    margin: auto;
+    /* width: 50%; */
+    padding: 20px;
+    text-align: center;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
+    animation: spin 2s linear infinite;
+    margin: auto;
+    /* background-image: url("../img/tankLoader.png"); */
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+button {
+    color: hsla(0, 0%, 100%, 0.997);
+    background-color: #4db2ff;
+    border-color: #4db2ff;
+    width: 300px;
+    text-align: center;
+    transition-duration: 0.1s;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #0091ff;
+}
+
+button:disabled,
+button[disabled] {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
