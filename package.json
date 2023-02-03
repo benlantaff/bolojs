@@ -15,7 +15,7 @@
     "publish": {
       "provider": "github",
       "owner": "benlantaff",
-      "token": "${{ secrets.BOLOJS }}"
+      "token": "${{ secrets.UPDATE_TOKEN }}"
     }
   },
   "author": "Ben Lantaff (boloreworked@outlook.com)",
