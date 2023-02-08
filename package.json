@@ -1,11 +1,12 @@
 {
   "name": "bolojs",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "BoloJS client",
   "main": "index.js",
   "scripts": {
     "start": "electron .",
     "build": "electron-builder -w",
+    "build-mac": "electron-builder -m -p onTagOrDraft",
     "release": "electron-builder -w -p onTagOrDraft"
   },
   "repository": "https://github.com/benlantaff/BoloJS",
@@ -16,13 +17,21 @@
       "provider": "github",
       "owner": "benlantaff",
       "token": "${{ secrets.UPDATE_TOKEN }}"
+    },
+    "mac": {
+      "hardenedRuntime": true,
+      "entitlements": "build/entitlements.mac.plist",
+      "entitlementsInherit": "build/entitlements.mac.plist",
+      "gatekeeperAssess": false,
+      "category": "public.app-category.developer-tools"
     }
   },
   "author": "Ben Lantaff (boloreworked@outlook.com)",
   "license": "ISC",
   "devDependencies": {
     "electron": "^21.2.3",
-    "electron-builder": "^23.6.0"
+    "electron-builder": "^23.6.0",
+    "electron-notarize": "^1.2.2"
   },
   "dependencies": {
     "electron-log": "^4.4.8",
