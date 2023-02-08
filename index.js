@@ -1,10 +1,10 @@
 // Modules to control application life and create native browser window
-const { app, BrowserWindow, screen } = require("electron");
-const path = require("path");
-const updater = require("./updater");
+const { app, BrowserWindow, screen } = require('electron');
+const path = require('path');
+const updater = require('./updater');
 
-//const environment = "development";
-const environment = "production";
+//const environment = 'development';
+const environment = 'production';
 
 const createWindow = () => {
   let primaryDisplay = screen.getPrimaryDisplay();
@@ -16,10 +16,10 @@ const createWindow = () => {
     resizable: false,
     //fullscreen: true,
     show: false,
-    icon: __dirname + "/icon.png",
+    icon: __dirname + '/icon.png',
     webPreferences: {
       nodeIntegration: true,
-      preload: path.join(__dirname, "preload.js"),
+      preload: path.join(__dirname, 'preload.js'),
     },
   });
 
@@ -29,7 +29,7 @@ const createWindow = () => {
     height: 225,
     frame: false,
     resizable: false,
-    icon: __dirname + "/icon.png",
+    icon: __dirname + '/icon.png',
     webPreferences: {
       nodeIntegration: true,
       parent: mainWindow,
@@ -37,18 +37,18 @@ const createWindow = () => {
   });
 
   // Load the start page
-  mainWindow.loadFile("index.html");
+  mainWindow.loadFile('index.html');
 
-  updateWindow.loadFile("updates.html");
+  updateWindow.loadFile('updates.html');
   updateWindow.setHasShadow = true;
   // mainWindow.webContents.openDevTools();
   // updateWindow.webContents.openDevTools();
 
   //ONLY FOR TESTING
-  if (environment === "development") {
+  if (environment === 'development') {
     updateWindow.close();
     mainWindow.show();
-  } else if (environment === "production") {
+  } else if (environment === 'production') {
     //FOR PRODUCTION
     updater(updateWindow, mainWindow);
   }
@@ -60,7 +60,7 @@ const createWindow = () => {
 app.whenReady().then(() => {
   createWindow();
 
-  app.on("activate", () => {
+  app.on('activate', () => {
     // On macOS it's common to re-create a window in the app when the
     // dock icon is clicked and there are no other windows open.
     if (BrowserWindow.getAllWindows().length === 0) createWindow();
@@ -70,8 +70,8 @@ app.whenReady().then(() => {
 // Quit when all windows are closed, except on macOS. There, it's common
 // for applications and their menu bar to stay active until the user quits
 // explicitly with Cmd + Q.
-app.on("window-all-closed", () => {
-  if (process.platform !== "darwin") app.quit();
+app.on('window-all-closed', () => {
+  if (process.platform !== 'darwin') app.quit();
 });
 
 // In this file you can include the rest of your app's specific main process
