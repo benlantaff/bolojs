@@ -1,6 +1,6 @@
 {
   "name": "bolojs",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "BoloJS client",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "publish": {
       "provider": "github",
       "owner": "benlantaff",
-      "token": "${{ secrets.UPDATE_TOKEN }}"
+      "token": "bla"
     },
     "mac": {
       "type": "distribution",
