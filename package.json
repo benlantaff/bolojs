@@ -1,6 +1,6 @@
 {
   "name": "bolojs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "BoloJS client",
   "main": "index.js",
   "scripts": {
