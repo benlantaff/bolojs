@@ -2,35 +2,59 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <!-- <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-    /> -->
-    <title>Hello World!</title>
-    <style>
-      .center {
-        display: block;
-
-        border: 3px solid green;
-        text-align: center;
-      }
-    </style>
+    <link
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>BoloJS</title>
   </head>
   <body style="color: #1379cc; background-color: #1e1e1e">
-    <div class="center">
-      <h2>Hello World!</h2>
-      <p>Version: <span id="app-version"></span></p>
-      <p>OS: <span id="platform"></span></p>
-      <img src="./icon.png" />
-      <a href="">Tutorial</a>
-      <a href="">Practice</a>
-      <a href="">TCP/IP</a>
-      <a href="">Local Network</a>
-      <a href="">Online</a>
-      <a href="">Bolojs website</a>
-      <a href="">Help</a>
+    <nav
+      class="navbar sticky-top"
+      style="background-color: #323233; -webkit-app-region: drag"
+    >
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1"></span>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row" style="padding-top: 1%">
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <button
+            class="btn btn-primary"
+            type="button"
+            style="text-align: left"
+          >
+            <img src="img/tutorial.png" /> Tutorial
+          </button>
+          <button
+            class="btn btn-primary"
+            type="button"
+            style="text-align: left"
+          >
+            <img src="img/practice.png" /> Practice
+          </button>
+          <button
+            class="btn btn-primary"
+            type="button"
+            style="text-align: left"
+          >
+            <img src="img/startMatch.png" /> Start a match
+          </button>
+          <button
+            class="btn btn-primary"
+            type="button"
+            style="text-align: left"
+          >
+            <img src="img/join.png" /> Join a match
+          </button>
+        </div>
+      </div>
+      <hr />
+      <div class="row" style="padding-top: 1%; text-align: right">
+        <span id="app-version"></span>
+      </div>
     </div>
-
     <!-- You can also require other files to run in this process -->
     <!-- <script src="./renderer.js"></script> -->
   </body>

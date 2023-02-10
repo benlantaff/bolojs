@@ -1,6 +1,6 @@
 {
   "name": "bolojs",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "BoloJS client",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "publish": {
       "provider": "github",
       "owner": "benlantaff",
-      "token": "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"
+      "token": "${{ secrets.UPDATE_TOKEN }}"
     },
     "mac": {
       "type": "distribution",
@@ -40,6 +40,7 @@
     "electron-notarize": "^1.2.2"
   },
   "dependencies": {
+    "bootstrap": "^5.2.3",
     "electron-log": "^4.4.8",
     "electron-updater": "^5.3.0"
   }
