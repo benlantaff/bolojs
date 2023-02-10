@@ -3,8 +3,8 @@ const { app, BrowserWindow, screen } = require("electron");
 const path = require("path");
 const updater = require("./updater");
 
-const environment = "development";
-//const environment = 'production';
+//const environment = "development";
+const environment = "production";
 
 const createWindow = () => {
   let primaryDisplay = screen.getPrimaryDisplay();
