@@ -3,8 +3,8 @@ const { app, BrowserWindow, screen } = require("electron");
 const path = require("path");
 const updater = require("./updater");
 
-//const environment = "development";
-const environment = "production";
+const environment = "development";
+//const environment = "production";
 
 const createWindow = () => {
   let primaryDisplay = screen.getPrimaryDisplay();
@@ -14,7 +14,7 @@ const createWindow = () => {
     // width: primaryDisplay.size.width / 2 - 600,
     // height: primaryDisplay.size.height / 2 - 400,
     width: 400,
-    height: 300,
+    height: 330,
     resizable: false,
     //movable: true,
     // minHeight: primaryDisplay.size.height / 2 + 200,
