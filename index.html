@@ -6,59 +6,40 @@
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link href="css/common-styles.css" rel="stylesheet" />
     <title>BoloJS</title>
   </head>
-  <body style="color: #1379cc; background-color: #1e1e1e">
-    <nav
-      class="navbar sticky-top"
-      style="background-color: #323233; -webkit-app-region: drag"
-    >
+  <body>
+    <nav class="navbar sticky-top drag">
       <div class="container-fluid">
         <span class="navbar-brand mb-0 h1"></span>
       </div>
     </nav>
     <div class="container">
-      <div class="row" style="padding-top: 3%">
+      <div class="row" style="padding-top: 9%">
         <div class="d-grid gap-2 col-6 mx-auto">
-          <button
-            disabled
-            class="btn btn-secondary"
-            type="button"
-            style="text-align: left"
-          >
+          <button disabled class="btn btn-secondary lefta" type="button">
             <img src="img/tutorial.png" /> Tutorial
           </button>
-          <button
-            class="btn btn-primary"
-            type="button"
-            style="text-align: left"
-          >
+          <button id="practice" class="btn btn-primary lefta" type="button">
             <img src="img/practice.png" /> Practice
           </button>
-          <button
-            disabled
-            class="btn btn-secondary"
-            type="button"
-            style="text-align: left"
-          >
+          <button disabled class="btn btn-secondary lefta" type="button">
             <img src="img/startMatch.png" /> Start a match
           </button>
-          <button
-            disabled
-            class="btn btn-secondary"
-            type="button"
-            style="text-align: left"
-          >
+          <button disabled class="btn btn-secondary lefta" type="button">
             <img src="img/join.png" /> Join a match
           </button>
         </div>
       </div>
-      <hr />
-      <div class="row" style="padding-top: 1%; text-align: right">
-        <span id="app-version"></span>
-      </div>
+      <footer class="footer">
+        <div class="container">
+          <span class="text-muted"
+            >BoloJS 2023 | <span id="app-version"></span
+          ></span>
+        </div>
+      </footer>
     </div>
-    <!-- You can also require other files to run in this process -->
-    <!-- <script src="./renderer.js"></script> -->
+    <script src="js/practice.js"></script>
   </body>
 </html>
