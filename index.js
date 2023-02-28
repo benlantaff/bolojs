@@ -47,8 +47,10 @@ const createWindow = () => {
 
   // Practice
   practiceWindow = new BrowserWindow({
-    width: primaryDisplay.size.width / 2 + 200,
-    height: primaryDisplay.size.height / 2 + 200,
+    width: 1166,
+    height: 705,
+    // width: primaryDisplay.size.width / 2 + 200,
+    // height: primaryDisplay.size.height / 2 + 200,
     resizable: false,
     //movable: true,
     // minHeight: primaryDisplay.size.height / 2 + 200,
@@ -75,6 +77,7 @@ const createWindow = () => {
   // practiceWindow.setHasShadow = true;
   //mainWindow.webContents.openDevTools();
   // updateWindow.webContents.openDevTools();
+  //practiceWindow.webContents.openDevTools();
 
   //ONLY FOR TESTING
   if (environment === 'development') {
@@ -90,6 +93,7 @@ const createWindow = () => {
 ipcMain.on('practice', async (e, data) => {
   practiceWindow.loadFile('practice.html');
   practiceWindow.show();
+
   mainWindow.close();
 });
 
