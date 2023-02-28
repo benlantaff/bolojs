@@ -13,18 +13,22 @@
   <body>
     <nav
       class="navbar sticky-top"
-      style="background-color: #323233; -webkit-app-region: drag"
+      style="
+        background-color: #323233;
+        -webkit-app-region: drag;
+        text-align: right;
+      "
     >
       <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1"></span>
+        <span class="navbar-brand mb-0 h1"> X button to exit game</span>
       </div>
     </nav>
     <div class="container">
       <script>
         var config = {
           type: Phaser.AUTO,
-          width: 1152,
-          height: 672,
+          width: window.innerWidth - 14,
+          height: window.innerHeight - 55,
           physics: {
             default: 'arcade',
             arcade: {
