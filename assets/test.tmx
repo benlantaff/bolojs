@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.2" orientation="orthogonal" renderorder="right-down" width="25" height="25" tilewidth="32" tileheight="32" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" name="land_1" tilewidth="32" tileheight="32" tilecount="64" columns="8">
+  <image source="craftpix-988114-free-tropical-medieval-city-2d-tileset (1)/PNG/land/land_1.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="65" name="land_19" tilewidth="32" tileheight="32" tilecount="64" columns="8">
+  <image source="craftpix-988114-free-tropical-medieval-city-2d-tileset (1)/PNG/land/land_19.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="129" name="land_20" tilewidth="32" tileheight="32" tilecount="64" columns="8">
+  <image source="craftpix-988114-free-tropical-medieval-city-2d-tileset (1)/PNG/land/land_20.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="193" name="land_22" tilewidth="32" tileheight="32" tilecount="64" columns="8">
+  <image source="craftpix-988114-free-tropical-medieval-city-2d-tileset (1)/PNG/land/land_22.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="257" name="land_2" tilewidth="32" tileheight="32" tilecount="64" columns="8">
+  <image source="craftpix-988114-free-tropical-medieval-city-2d-tileset (1)/PNG/land/land_2.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="321" name="land_3" tilewidth="32" tileheight="32" tilecount="64" columns="8">
+  <image source="craftpix-988114-free-tropical-medieval-city-2d-tileset (1)/PNG/land/land_3.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="385" name="land_21" tilewidth="32" tileheight="32" tilecount="64" columns="8">
+  <image source="craftpix-988114-free-tropical-medieval-city-2d-tileset (1)/PNG/land/land_21.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="449" name="land_15" tilewidth="32" tileheight="32" tilecount="64" columns="8">
+  <image source="craftpix-988114-free-tropical-medieval-city-2d-tileset (1)/PNG/land/land_15.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="513" name="greenery_2" tilewidth="32" tileheight="32" tilecount="20" columns="5">
+  <image source="craftpix-988114-free-tropical-medieval-city-2d-tileset (1)/PNG/decor/greenery_2.png" width="177" height="155"/>
+ </tileset>
+ <tileset firstgid="533" name="greenery_4" tilewidth="32" tileheight="32" tilecount="12" columns="3">
+  <image source="craftpix-988114-free-tropical-medieval-city-2d-tileset (1)/PNG/decor/greenery_4.png" width="111" height="148"/>
+ </tileset>
+ <tileset firstgid="545" name="stones_1" tilewidth="32" tileheight="32" tilecount="6" columns="3">
+  <image source="craftpix-988114-free-tropical-medieval-city-2d-tileset (1)/PNG/decor/stones_1.png" width="103" height="86"/>
+ </tileset>
+ <tileset firstgid="551" name="stones_2" tilewidth="32" tileheight="32" tilecount="9" columns="3">
+  <image source="craftpix-988114-free-tropical-medieval-city-2d-tileset (1)/PNG/decor/stones_2.png" width="115" height="106"/>
+ </tileset>
+ <tileset firstgid="560" name="decor_4" tilewidth="32" tileheight="32" tilecount="20" columns="4">
+  <image source="craftpix-988114-free-tropical-medieval-city-2d-tileset (1)/PNG/decor/decor_4.png" width="157" height="189"/>
+ </tileset>
+ <tileset firstgid="580" name="building_1" tilewidth="32" tileheight="32" tilecount="294" columns="14">
+  <image source="craftpix-988114-free-tropical-medieval-city-2d-tileset (1)/PNG/buildings/building_1/building_1.png" width="476" height="672"/>
+ </tileset>
+ <layer id="1" name="Tile Layer 1" width="25" height="25">
+  <data encoding="csv">
+193,194,195,196,197,198,199,200,28,1,2,3,4,5,6,7,8,385,386,387,388,389,390,391,392,
+201,202,203,204,205,206,207,208,13,9,10,11,12,13,14,15,16,393,394,395,396,397,398,399,400,
+209,210,211,212,213,214,215,216,40,17,18,19,20,21,22,23,24,401,402,403,404,405,406,407,408,
+217,218,219,220,221,222,223,224,28,25,26,27,28,29,30,31,32,409,410,411,412,413,414,415,416,
+225,226,227,228,229,230,231,232,28,33,34,35,36,37,38,39,40,417,418,419,420,421,422,423,424,
+233,234,235,236,237,238,239,240,28,41,42,43,44,45,46,47,48,425,426,427,428,429,430,431,432,
+241,242,243,244,245,246,247,248,28,49,50,51,52,53,54,55,56,433,434,435,436,437,438,439,440,
+249,250,251,252,253,254,255,256,28,57,58,59,60,61,62,63,64,441,442,443,444,445,446,447,448,
+1,2,3,4,5,6,7,8,28,1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8,
+9,10,11,12,13,14,15,16,28,9,10,11,12,13,14,15,16,9,10,11,12,13,14,15,16,
+17,18,19,20,21,22,23,24,28,17,18,19,20,21,22,545,546,547,18,19,20,21,22,23,24,
+25,26,551,552,553,30,31,32,28,25,26,27,28,29,30,548,549,550,26,27,28,29,30,31,32,
+33,34,554,555,556,38,39,40,28,33,34,35,36,37,38,39,40,33,34,35,36,37,38,39,40,
+41,42,557,558,559,46,47,48,17,41,42,43,44,45,46,47,48,41,42,43,44,45,46,47,48,
+49,50,51,52,53,54,55,56,25,49,551,552,553,53,54,55,56,49,50,51,52,53,54,55,56,
+57,58,59,60,61,62,63,64,28,57,554,555,556,61,62,63,64,57,58,59,60,61,62,63,64,
+28,28,28,12,28,28,28,28,28,28,557,558,559,8,28,28,40,28,28,28,28,28,28,12,28,
+129,129,130,131,132,133,134,135,136,1,2,3,4,5,6,7,8,65,66,67,68,69,70,71,72,
+137,137,138,139,140,141,142,143,144,9,10,11,12,545,546,547,16,73,74,75,76,77,78,79,80,
+145,145,146,147,148,149,150,151,152,17,18,19,20,548,549,550,24,81,82,83,84,85,86,87,88,
+153,153,154,155,156,157,158,159,160,25,26,27,28,29,30,31,32,89,90,91,92,93,94,95,96,
+161,161,162,163,164,165,166,167,168,33,34,35,36,37,38,39,40,97,98,99,100,101,102,103,104,
+169,169,170,171,172,173,174,175,176,41,42,43,44,45,46,47,48,105,106,107,108,109,110,111,112,
+177,177,178,179,180,181,182,183,184,49,50,51,52,53,54,55,56,113,114,115,116,117,118,119,120,
+185,185,186,187,188,189,190,191,192,57,58,59,60,61,62,63,64,121,122,123,124,125,126,127,128
+</data>
+ </layer>
+</map>

@@ -7,7 +7,13 @@
       rel="stylesheet"
     /> -->
     <link href="css/common-styles.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/phaser@3.15.1/dist/phaser-arcade-physics.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
+
+    <script src="js/Entity.js"></script>
+    <script src="js/NonPlayer.js"></script>
+    <script src="js/Player.js"></script>
+    <script src="js/GameScene.js"></script>
+    <script src="js/main.js"></script>
     <title>BoloJS</title>
   </head>
   <body>
@@ -19,18 +25,20 @@
         text-align: right;
       "
     >
-      <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1"> X button to exit game</span>
-      </div>
+      <div class="container-fluid">Profile dropdown / exit ??</div>
     </nav>
     <div class="container">
-      <script>
+      <div class="game-container">
+        <div id="game-div"></div>
+      </div>
+
+      <!-- <script>
         var config = {
           type: Phaser.AUTO,
           width: window.innerWidth - 14,
           height: window.innerHeight - 55,
           physics: {
-            default: 'arcade',
+            default: "arcade",
             arcade: {
               gravity: { y: 200 },
             },
@@ -44,25 +52,25 @@
         var game = new Phaser.Game(config);
 
         function preload() {
-          this.load.setBaseURL('http://labs.phaser.io');
+          this.load.setBaseURL("http://labs.phaser.io");
 
-          this.load.image('sky', 'assets/skies/space3.png');
-          this.load.image('logo', 'assets/sprites/phaser3-logo.png');
-          this.load.image('red', 'assets/particles/red.png');
+          //this.load.image("sky", "assets/skies/space3.png");
+          this.load.image("logo", "assets/sprites/phaser3-logo.png");
+          this.load.image("red", "assets/particles/red.png");
         }
 
         function create() {
-          this.add.image(400, 300, 'sky');
+          //this.add.image(400, 300, "sky");
 
-          var particles = this.add.particles('red');
+          var particles = this.add.particles("red");
 
           var emitter = particles.createEmitter({
             speed: 100,
             scale: { start: 1, end: 0 },
-            blendMode: 'ADD',
+            blendMode: "ADD",
           });
 
-          var logo = this.physics.add.image(400, 100, 'logo');
+          var logo = this.physics.add.image(400, 100, "logo");
 
           logo.setVelocity(100, 200);
           logo.setBounce(1, 1);
@@ -70,7 +78,7 @@
 
           emitter.startFollow(logo);
         }
-      </script>
+      </script> -->
     </div>
     <footer class="footer">
       <div class="container">

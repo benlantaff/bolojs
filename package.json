@@ -37,7 +37,8 @@
   "devDependencies": {
     "electron": "^21.2.3",
     "electron-builder": "^23.6.0",
-    "electron-notarize": "^1.2.2"
+    "electron-notarize": "^1.2.2",
+    "nodemon": "^2.0.20"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
