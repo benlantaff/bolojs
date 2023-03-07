@@ -1,16 +1,16 @@
 class GameScene extends Phaser.Scene {
   constructor() {
-    super('gameScene');
+    super("gameScene");
   }
   preload() {
     //this.cursors;
     //this.cameras.main.setBackgroundColor(0x9900e3);
 
     // this.load.image("tiles", "assets/bg-sprites.png");
-    this.load.image('tiles', 'assets/LatestSpriteSheet.png');
-    this.load.tilemapTiledJSON('map', 'assets/brimhaven.json');
-    this.load.audio('overworld', ['audio/overworld.mp3']);
-    this.load.audio('splat', ['audio/splat.mp3']);
+    this.load.image("tiles", "assets/bolosprites64.png");
+    this.load.tilemapTiledJSON("map", "assets/bolojs.json");
+    //this.load.audio('overworld', ['audio/overworld.mp3']);
+    //this.load.audio('splat', ['audio/splat.mp3']);
     // this.load.spritesheet("hero", "images/ninja-sprite.png", {
     //   frameWidth: 32,
     //   frameHeight: 43,
@@ -20,9 +20,9 @@ class GameScene extends Phaser.Scene {
     //   frameHeight: 582,
     // });
 
-    this.load.spritesheet('hero', 'assets/baldy/baldyFull.png', {
-      frameWidth: 394,
-      frameHeight: 550,
+    this.load.spritesheet("hero", "assets/tanky.png", {
+      frameWidth: 64,
+      frameHeight: 64,
     });
 
     // this.load.spritesheet("wraith", "images/wraith.png", {
@@ -37,12 +37,12 @@ class GameScene extends Phaser.Scene {
   } //end preload
 
   create() {
-    const map = this.make.tilemap({ key: 'map' });
+    const map = this.make.tilemap({ key: "map" });
 
     // const tileset = map.addTilesetImage("bg-sprites", "tiles");
-    const tileset = map.addTilesetImage('LatestSpriteSheet', 'tiles');
-    const belowLayer = map.createLayer('ground', tileset, 0, 0).setScale(1);
-    const worldLayer = map.createLayer('world', tileset, 0, 0).setScale(1);
+    const tileset = map.addTilesetImage("bolosprites64", "tiles");
+    const belowLayer = map.createLayer("ground", tileset, 0, 0).setScale(1);
+    const worldLayer = map.createLayer("world", tileset, 0, 0).setScale(1);
     //const aboveLayer = map.createLayer("top", tileset, 0, 0);
 
     // aboveLayer.setDepth(100);
@@ -65,10 +65,10 @@ class GameScene extends Phaser.Scene {
 
     // this.player = this.physics.add.sprite(400, 600, "ninja").setScale(1.5);
 
-    this.player = new Player(this, 600, 2550, 'hero').setScale(0.17);
-    let overworld = this.sound.add('overworld', { loop: true });
-    let splat = this.sound.add('splat', { loop: false });
-    overworld.play();
+    this.player = new Player(this, 600, 2550, "hero").setScale(1);
+    // let overworld = this.sound.add('overworld', { loop: true });
+    // let splat = this.sound.add('splat', { loop: false });
+    // overworld.play();
     //this.splat.play();
     // this.npc = new NonPlayer(this, 280, 200, "hero").setScale(0.17);
 
@@ -87,14 +87,14 @@ class GameScene extends Phaser.Scene {
       this.player,
       worldLayer,
       function (player, worldLayer) {
-        splat.play();
+        // splat.play();
       }
     );
 
     // this.physics.add.collider(this.npc, worldLayer);
-    this.physics.world.bounds.width = '100%';
-    this.physics.world.bounds.height = '100%';
-    this.cameras.main.setBounds(0, 0, '100%', '100%');
+    this.physics.world.bounds.width = "100%";
+    this.physics.world.bounds.height = "100%";
+    this.cameras.main.setBounds(0, 0, "100%", "100%");
 
     this.cameras.main.startFollow(this.player, true, 0.8, 0.8);
   } // end create

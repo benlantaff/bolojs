@@ -77,7 +77,7 @@ const createWindow = () => {
   // practiceWindow.setHasShadow = true;
   //mainWindow.webContents.openDevTools();
   // updateWindow.webContents.openDevTools();
-  practiceWindow.webContents.openDevTools();
+  // practiceWindow.webContents.openDevTools();
 
   //ONLY FOR TESTING
   if (environment === "development") {
